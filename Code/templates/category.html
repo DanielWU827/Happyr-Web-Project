@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Happyr | Find happiest moment</title>
+        <link rel="stylesheet" href="static/datastyle.css"/>
+    </head>
+
+    <body>
+    {% set icon_map = {
+    'affection': 'static/affection.png',
+    'achievement': 'static/achievement.png',
+    'enjoy_the_moment': 'static/enjoy_the_moment.png',
+    'bonding': 'static/bonding.png',
+    'leisure': 'static/leisure.png',
+    'nature': 'static/nature.png',
+    'exercise': 'static/exercise.png'
+    } %}
+    <h1> Find happiest moment</h1>
+
+    <nav>
+        <ul>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/random">Generate a random memory</a></li>
+        <li><a href="/category">Filter by category</a></li>
+        </ul>
+    </nav>
+
+    <form method="get" action="/category">
+        <label for="category_select">Choose a category:</label>
+        <select name="category_choice" id="category_select">
+            {% for category in category_list %}
+            <option value="{{ category }}" {% if choice_category == category %}selected{% endif %}>{{ category.replace('_', ' ').title() }}</option>
+            {% endfor %}
+        </select>
+        <button>Show Story</button>
+    </form>
+    
+    {% if choice_category%}
+    <div class="highlight">
+        <p>{{ story }}</p>
+    </div>
+
+    <div class="img">
+    <img src="{{ icon_map.get(choice_category) }}" alt="{{ choice_category }}">
+    </div>
+    {% endif %}
+
+    <div class="home-button">
+        <a href="/">Home</a>
+    </div>
+    
+    </body>
+</html>

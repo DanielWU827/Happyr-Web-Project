@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Happyr | Your happiest moment</title>
+
+    <!--- Our css style sheet for the website-->
+    <link rel="stylesheet" href="../static/datastyle.css" />
+  </head>
+
+  <!-- just prints the single memory -->
+  <body>
+    <h1>Surprise Happy Memory!</h1>
+
+      <nav>
+        <ul>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/random">Generate a random memory</a></li>
+        <li><a href="/category">Filter by category</a></li>
+        </ul>
+    </nav>
+    
+    <h2>Your memory:</h2>
+
+    <p>{{memory}}</p>
+
+    <p><a href="/random">Give me another</a> | <a href="/">Back to home</a></p>
+
+    <img
+      src="static/surprise_happy_face-modified (1).png"
+      alt="Surprised Happy Face"
+      class="img-responsive big-face"
+    />
+
+
+  </body>
+</html>

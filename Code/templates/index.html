@@ -1,0 +1,74 @@
+<html>
+     <!-- Header information: links to external scripts and style files, other metadata about the page. -->
+     <head>
+          <!-- The title is mandatory. If you use tabs, the title appears in the page's tab in your browser.-->
+          <title>Happyr | A sweet slice of life</title>
+
+          <!--- Our css style sheet for the website-->
+          <link rel="stylesheet" href="../static/datastyle.css">
+     </head>
+
+     <!-- The body consists of the visible parts of the web page. -->
+     <body>
+          <h1>Welcome to Happyr! :)</h1>
+
+          <!-- Our nav bar -->
+          <nav>
+               <ul>
+               <li><a href="/random">Generate a random memory</a></li>
+               <li><a href="/category">Filter by category</a></li>
+               </ul>
+          </nav>
+
+          <!-- Our happy messages-->
+          <div class="word-bubble">
+               <span class="word bubble1">I'm happy</span>
+               <span class="word bubble2">我很开心</span>
+               <span class="word bubble3">私は幸せです</span>
+               <span class="word bubble4">Estoy feliz</span>
+               <span class="word bubble5">estou feliz</span>
+               <span class="word bubble6">मैं खुश हूं</span>
+               <span class="word bubble7">Je suis heureux</span>
+               <span class="word bubble8">أنا سعيد</span>
+               <span class="word bubble9">Ich bin glücklich</span>
+           </div>
+
+          <!-- Our word cloud-->
+          <ul class="cloud">
+               <!-- weights are frequency of each category, ranked-->
+               <li><a href="/category?category_choice=affection" data-weight="9">affection</a></li>
+               <li><a href="/category?category_choice=achievement" data-weight="8">achievement</a></li>
+               <li><a href="/category?category_choice=enjoy_the_moment" data-weight="7">enjoy the moment</a></li>
+               <li><a href="/category?category_choice=bonding" data-weight="6">bonding</a></li>
+               <li><a href="/category?category_choice=leisure" data-weight="5">leisure</a></li>
+               <li><a href="/category?category_choice=nature" data-weight="4">nature</a></li>
+               <li><a href="/category?category_choice=exercise" data-weight="3">exercise</a></li>
+          </ul>
+
+          <!-- Mission statement -->
+          <div>
+          <h2>Our Mission</h2>
+               <p> 
+                    Our goal is to spread happiness by showing people what makes others happy!
+
+                    In a modern world where we are constantly surrounded by negativity, it's easy to let our happy thoughts
+                    get drowned out. Happyr hopes to encourage erveryone to dig those back up. Reflection with the active goal
+                    of bringing up happy memories leads to happier people. We hope to inspire you to do the same and take
+                    a moment to reflect today and find out what makes you Happyr.
+               </p>
+          </div>
+
+          <!--- Data Statement -->
+          <div class = "highlight">
+          <h2>Data source</h2>
+               <p>Data from HappyDB - a database of over 100,000 crowd-sourced happy moments.</p>
+               <p>Retrieved from their <a href="https://github.com/megagonlabs/HappyDB/tree/master/happydb/data">GitHub repo</a> on September 17, 2025.</p>
+               <p>Data usage policy not explicitly stated.</p>
+          </div>
+
+          <div class="help-button">
+               <a href="/help">Help</a>
+          </div>
+<!-- always end your page with these tags! -->
+     </body>
+</html>

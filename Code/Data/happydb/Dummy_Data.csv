@@ -1,0 +1,22 @@
+hmid,wid,reflection_period,original_hm,cleaned_hm,modified,num_sentence,ground_truth_category,predicted_category
+27673,2053,24h,I went on a successful date with someone I felt sympathy and connection with.,I went on a successful date with someone I felt sympathy and connection with.,True,1,,affection
+27674,2,24h,I was happy when my son got 90% marks in his examination ,I was happy when my son got 90% marks in his examination ,True,1,,affection
+27675,1936,24h,I went to the gym this morning and did yoga.,I went to the gym this morning and did yoga.,True,1,,exercise
+27676,206,24h,We had a serious talk with some friends of ours who have been flaky lately. They understood and we had a good evening hanging out.,We had a serious talk with some friends of ours who have been flaky lately. They understood and we had a good evening hanging out.,True,2,bonding,bonding
+27677,6227,24h,"I went with grandchildren to butterfly display at Crohn Conservatory
+","I went with grandchildren to butterfly display at Crohn Conservatory",True,1,,affection
+27678,45,24h,I meditated last night.,I meditated last night.,True,1,leisure,leisure
+27679,195,24h,"I made a new recipe for peasant bread, and it came out spectacular!","I made a new recipe for peasant bread, and it came out spectacular!",True,1,,achievement
+28120,2019,24h,I bought a new phone,I bought a new phone,True,1,achievement,achievement
+28121,4109,24h,I got to see a very good old friend that came over at my daughter's birthday.,I got to see a very good old friend that came over at my daughter's birthday.,True,1,bonding,bonding
+28122,373,24h,I finished work earlier than usually,I finished work earlier than usually,True,1,,achievement
+28123,389,24h,I went to the park,I went to the park,True,1,,leisure
+28124,10576,24h,I was able to reach my target weight today at 85kg. Need to lose more but still happy.,I was able to reach my target weight today at 85kg. Need to lose more but still happy.,True,2,,achievement
+28125,2129,24h,LAST EVENING IN MY OFFICE I GOT A GIFT CONTAINING A TOUR PACKAGE INCLUDING MY FAMILY FOR THE SUCCESS IN MY PROJECT. I FELT SURPRISE AND HAPPY.,LAST EVENING IN MY OFFICE I GOT A GIFT CONTAINING A TOUR PACKAGE INCLUDING MY FAMILY FOR THE SUCCESS IN MY PROJECT. I FELT SURPRISE AND HAPPY.,True,2,,affection
+28126,383,24h,I went to the gym,I went to the gym,True,1,,exercise
+28127,553,24h,I made tea this morning with ginger. My wife liked it very much and this made me happy.,I made tea this morning with ginger. My wife liked it very much and this made me happy.,True,2,,affection
+28128,311,24h,I found a great deal on a Samsonite backpack.,I found a great deal on a Samsonite backpack.,True,1,,achievement
+28196,905,24h,its holiday and its not sunday so im happy,its holiday and its not sunday so im happy,True,1,,enjoy_the_moment
+28350,1061,24h,My wife made her chicken soup.,My wife made her chicken soup.,True,1,affection,affection
+28351,545,24h,Going to the gym during my lunch break made me happy,Going to the gym during my lunch break made me happy,True,1,,exercise
+28352,2324,24h,The beautiful weather outside makes  me happy. ,The beautiful weather outside makes  me happy. ,True,1,,nature

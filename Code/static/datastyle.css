@@ -1,0 +1,223 @@
+/* Title banner styling */
+h1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #250570;
+  color: white;
+  text-align: center;
+}
+
+/* All text should be in margins */
+body {
+  color: #250570;
+  background-color: #d7defc;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*Highlight important content */
+div.highlight {
+  background-color: white;
+  width: 300px;
+  border: 2px solid #250570;
+  float: right;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Nav bar --------------------------------------------------------------------------------------*/
+
+/* The nav bar is an unordered list ("ul") whose items are not bulleted. 
+We only want to apply this styling to unordered lists inside of the nav tag */
+nav ul {
+  border: 2px solid #250570;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+/* Nav bar list items ("li") should render starting at the left margin */
+nav li {
+  float: left;
+}
+
+/* Nav bar items should link to elements on the page or to other pages 
+(That's what's in the "a" tag.) The CSS below says "apply this style to links 
+within the nav bar". */
+nav li a {
+  display: block;
+  color: #250570;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* When you mouse over something in the nav bar. */
+nav li a:hover {
+  color: white;
+  background-color: #250570;
+}
+
+/*Font changes ----------------------------------------------------------------------------------*/
+
+h1,
+h2 {
+  font-family: Georgia, Garamond, serif;
+}
+
+p {
+  font-family: Georgia, Garamond, serif;
+  /* This next line gives us some extra spacing in a paragraph*/
+  line-height: 1.4;
+}
+
+li {
+  font-family: Georgia, Garamond, serif;
+  line-height: 1.4;
+}
+
+nav li {
+  font-family: Georgia, Garamond, serif;
+  float: left;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Word Cloud -----------------------------------------------------------------------------------*/
+
+ul.cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul.cloud a[data-weight="1"] {
+  --size: 1;
+}
+ul.cloud a[data-weight="2"] {
+  --size: 2;
+}
+ul.cloud a[data-weight="3"] {
+  --size: 3;
+}
+ul.cloud a[data-weight="4"] {
+  --size: 4;
+}
+ul.cloud a[data-weight="5"] {
+  --size: 5;
+}
+ul.cloud a[data-weight="6"] {
+  --size: 6;
+}
+ul.cloud a[data-weight="7"] {
+  --size: 7;
+}
+ul.cloud a[data-weight="8"] {
+  --size: 8;
+}
+ul.cloud a[data-weight="9"] {
+  --size: 9;
+}
+
+ul.cloud a {
+  --size: 4;
+  color: #250570;
+  display: block;
+  font-size: calc(var(--size) * 0.5rem + 0.5rem);
+  padding: 0.125rem 0.25rem;
+  text-decoration: none;
+  position: relative;
+  opacity: calc((15 - (9 - var(--size))) / 15);
+}
+
+ul.cloud a:focus {
+  outline: 1px dashed;
+}
+
+#pageNotFound {
+  background-color: blanchedalmond;
+  color: red;
+}
+
+img {
+  display: block;
+  margin: 2em auto;
+  max-width: 200px;
+  height: auto;
+}
+
+.big-face {
+  max-width: 400px;
+}
+
+.help-with-navbar {
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.home-button {
+  position: fixed;
+  left: 2%;
+  bottom: 1px;
+}
+
+.home-button:hover{
+  color: aqua;
+  text-decoration: underline;
+  box-shadow: 0 0 10px 0 rgb(24,237,212);
+}
+
+.contact {
+  margin: 10px;
+  padding: 50px;
+}
+
+.help-button{
+  position:fixed;
+  left: 2%;
+  bottom:1px;
+}
+
+div.word-bubble {
+  position: relative;
+  height: 400px;
+  align-items: center;
+}
+
+span.word {
+  position: absolute;
+  transition: transform 0.3s;
+}
+
+span.word:hover{
+  transform: scale(1.2);
+}
+
+.bubble1 {top: 37.5%; left: 39%; font-size: 0.75em; transform: rotate(28deg);}
+.bubble2 {top: 37.5%; left: 48%; font-size: 0.75em; transform: rotate(-28deg);}
+.bubble3 {top: 42%; left: 43%; font-size: 0.75em; transform: rotate(0deg);}
+.bubble4 {top: 65%; left: 45%; font-size: 1em; transform: rotate(28deg);}
+.bubble5 {top: 65%; left: 58%; font-size: 1em; transform: rotate(-28deg);}
+.bubble6 {top: 37.5%; left: 57%; font-size: 0.75em; transform: rotate(28deg);}
+.bubble7 {top: 42%; left: 60%; font-size: 0.75em; transform: rotate(0deg);}
+.bubble8 {top: 37.5%; left: 66%; font-size: 0.75em; transform: rotate(-28deg);}
+.bubble9 {top: 70%; left: 50%; font-size: 1em; transform: rotate(0deg);}
+
+@media screen and (min-width:601px){
+  body{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:600px){
+  body{
+    font-size: 5px;
+  }
+}
